@@ -1,0 +1,21 @@
+h1{
+    background-color: rgb(73, 73, 73);
+    color: blue;
+    border: 50px 0px;
+    border-color: rgb(73, 73, 73);
+}
+
+aside{
+    inset-block: 1px 0;
+    justify-items: left;
+    margin-left: 100px;
+    color: rgb(64, 83, 134);
+    border-right: 2px;
+    border-style: solid;
+
+}
+
+p{
+    color: rgb(64, 83, 134);
+    
+}
