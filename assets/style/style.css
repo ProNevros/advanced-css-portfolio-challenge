@@ -18,6 +18,7 @@ header {
     border-radius: 5px;
     background-color: var(--secondary);
     color: blanchedalmond;
+    width: 20%;
 }
 
 nav {
@@ -25,7 +26,7 @@ nav {
     font-size: 20px;
     margin: 20px;
     text-align: center;
-    width: 40%;
+    width: 80%;
 }
 
 nav a {
@@ -35,17 +36,6 @@ nav a {
 
 nav a:hover {
     background-color: var(--secondary);
-}
-
-nav ::after {
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    display: block;
-    background: none repeat scroll 0 0 transparent;
-    height: 2px;
-    width: 0px;
-
 }
 
 /* Image banner with text */
@@ -81,8 +71,7 @@ main {
 
 /* About me styling */
 
-.about-me-section {
-    color: cornflowerblue;
+.top-bottom-section {
     display: flex;
     text-align: center;
     justify-content: space-between;
@@ -94,23 +83,32 @@ aside {
     font-size: 50px;
     border-right: 2px solid cornflowerblue;
     padding: 20px;
+    width: 15%;
+    color: cornflowerblue;
 }
 
-.about-me-article {
+div{
+    padding: 10px;
+}
+
+article {
     width: 80%;
     margin: 15px;
     font-size: 20px;
+    color: cornflowerblue;
 }
 
 /* Portfolio styling */
 
-.portfolio-section h2 {
+.portfolio-section {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-aside {}
+section nav{
+background-color: var(--primary);
+}
 
 footer {
     text-align: right;
