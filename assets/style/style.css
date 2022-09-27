@@ -1,5 +1,11 @@
+:root {
+    --primary: rgba(101, 120, 156, 0.753);
+    --secondary: rgb(86, 125, 196);
+}
+
+/* Main header with navigation links */
 header {
-    background-color: rgba(101, 120, 156, 0.753);
+    background-color: var(--primary);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -9,7 +15,8 @@ header {
     margin: 10px;
     padding-left: 100px;
     font-size: 40px;
-    background-color: rgb(86, 125, 196);
+    border-radius: 5px;
+    background-color: var(--secondary);
     color: blanchedalmond;
 }
 
@@ -27,9 +34,21 @@ nav a {
 }
 
 nav a:hover {
-    background-color: rgb(86, 125, 196);
+    background-color: var(--secondary);
 }
 
+nav ::after {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    display: block;
+    background: none repeat scroll 0 0 transparent;
+    height: 2px;
+    width: 0px;
+
+}
+
+/* Image banner with text */
 
 img {
     object-fit: cover;
@@ -46,16 +65,21 @@ img {
 }
 
 .banner-message {
-    background-color: rgb(86, 125, 196);
+    background-color: var(--secondary);
     position: absolute;
     bottom: 20px;
     right: 35px;
     font-size: 40px;
+    border-radius: 5px;
 }
+
+/* General padding  */
 
 main {
     padding: 50px;
 }
+
+/* About me styling */
 
 .about-me-section {
     color: cornflowerblue;
@@ -65,23 +89,31 @@ main {
 
 }
 
-div {
+aside {
     text-align: right;
     font-size: 50px;
     border-right: 2px solid cornflowerblue;
-    padding-right: 20px;
+    padding: 20px;
 }
 
-article {
+.about-me-article {
     width: 80%;
-    margin-left: 15px;
+    margin: 15px;
     font-size: 20px;
 }
 
-li{
-    background-color: lightgrey;
-    width: 300px;
-    border: 15px solid green;
-    padding: 50px;
-    margin: 20px;
+/* Portfolio styling */
+
+.portfolio-section h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+aside {}
+
+footer {
+    text-align: right;
+    font-size: 10px;
+    background-color: var(--primary);
 }
